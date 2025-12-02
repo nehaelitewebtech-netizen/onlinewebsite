@@ -62,7 +62,7 @@ const Home = () => {
         <section className="skills-grid">
           <div className="skill-card">
             <h3>React JS</h3>
-            <p>Building dynamic and interactive interfaces.</p>
+            <p>open-source front-end JavaScript library that aims to make building user interfaces based on components.</p>
           </div>
           <div className="skill-card">
             <h3>JavaScript</h3>
@@ -78,11 +78,11 @@ const Home = () => {
           </div>
           <div className="skill-card">
             <h3>Java</h3>
-            <p>Strongly typed code for better scalability.</p>
+            <p>it is platform-independent, robust, secure, and versatile.</p>
           </div>
           <div className="skill-card">
             <h3>Bootstrap</h3>
-            <p>Version control and collaboration on projects.</p>
+            <p>open-source web development framework.</p>
           </div>
           <div className="skill-card">
             <h3>Responsive Design</h3>

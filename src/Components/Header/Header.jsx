@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">MyPortfolio</div>
+      <div className="logo">Neha</div>
 
       <nav className={menuOpen ? "nav-menu active" : "nav-menu"}>
         <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>

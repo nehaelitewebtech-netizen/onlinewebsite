@@ -1,57 +1,96 @@
 .contact-section {
-  max-width: 600px;
-  margin: auto;
-  padding: 60px 20px;
+  background: #000;
+  color: #fff;
+  padding: 80px 10%;
+  min-height: 100vh;
+}
+
+.contact-title {
   text-align: center;
+  font-size: 58px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #a855f7, #f97316);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 }
-.contact-right {
-  display: none;
-}
-.contact-left h1 {
-  font-size: 35px;
-  color: #222;
-}
+
+
 .contact-left {
-  width: 100%;
+  flex: 1;
 }
-.contact-sub {
-  opacity: 0.7;
-  margin-top: 10px;
-  margin-bottom: 20px;
+
+.contact-heading {
+  font-size: 32px;
+  margin-bottom: 15px;
 }
+
+.contact-description {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 400px;
+  color: #d1d1d1;
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+.contact-right {
+  flex: 1;
+}
+
 .contact-form {
-  width: 100%;
-  max-width: 450px;     
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
+
+.contact-form label {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  border: 2px solid #ddd;
-  border-radius: 6px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #fff;
   font-size: 16px;
-  outline: none;
 }
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #007bff;
+
+.contact-form textarea {
+  height: 160px;
+  resize: none;
 }
-.contact-form button {
-  padding: 12px;
-  background: #007bff;
-  color: white;
+
+.gradient-btn {
+  padding: 14px 30px;
+  border-radius: 25px;
   border: none;
-  border-radius: 6px;
+  color: #fff;
   cursor: pointer;
-  font-size: 17px;
+  background: linear-gradient(to right, #a855f7, #f97316);
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
 }
-.contact-form button:hover {
-  background: #005ace;
+
+.gradient-btn:hover {
+  transform: scale(1.05);
 }

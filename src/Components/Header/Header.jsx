@@ -1,28 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
 
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
+export default function Header() {
   return (
-    <header className="header">
-      <div className="logo">Neha</div>
+    <div className="header">
+      <div className="logo">
+        Neha<span></span>
+      </div>
 
-      <nav className={menuOpen ? "nav-menu active" : "nav-menu"}>
-        <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
-        <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-        <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
-        <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+      <nav className="nav">
+        <ul>
+          <li className="active">Home</li>
+          <li>About Me</li>
+          <li>Projects</li>
+           <li>Skills</li>
+          <li>Contact</li>
+        </ul>
       </nav>
 
-      <div
-        className="menu-icon"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        {menuOpen ? "✖" : "☰"}
-      </div>
-    </header>
-  );
+      <button className="connect-btn">Connect With Me</button>
+    </div>
+  )
 };
-
-export default Header;

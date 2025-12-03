@@ -3,6 +3,7 @@ import Header from "./Components/Header/Header";
 import Homee from "./Pages/Home/Home";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import Footerpage from "./Pages/Footerpage/Footerpage";
+import AboutUs from "./Pages/AboutUs/AboutUs";
 
 const router=createBrowserRouter([
   {
@@ -23,6 +24,12 @@ const router=createBrowserRouter([
   {
     path:"/Footer",
     element:<Footerpage/>
+  },
+
+
+  {
+    path:"/About",
+    element:<AboutUs/>
   },
 
   

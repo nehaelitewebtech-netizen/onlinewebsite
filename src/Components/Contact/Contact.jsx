@@ -29,6 +29,7 @@ export default function Contact() {
             <p> India</p>
           </div>
         </div>
+        
 
        
         <div className="contact-right">

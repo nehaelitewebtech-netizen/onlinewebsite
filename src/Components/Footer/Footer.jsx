@@ -1,25 +1,26 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-top">
-        
-        
-        <div className="footer-social-buttons">
-          <a href="#" className="social-btn"><FaGithub /></a>
-          <a href="#" className="social-btn"><FaLinkedin /></a>
-          <a href="#" className="social-btn"><FaTwitter /></a>
-          <a href="mailto:neha@example.com" className="social-btn"><FaEnvelope /></a>
-        </div>
+      <div className="footer-left">
+        <h2 className="logo">
+          Neha<span className="dot"></span>
+        </h2>
 
-       
+    
+        <p className="copyright">
+          © 2023 Neha. All rights reserved.
+        </p>
       </div>
 
-      <div className="footer-bottom">
-        <p>© 2025 Neha. All rights reserved.</p>
+      <div className="footer-right">
+        <div className="footer-links">
+          <a href="#">Terms of Services</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Connect with me</a>
+        </div>
       </div>
     </footer>
   );

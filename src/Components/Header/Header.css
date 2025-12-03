@@ -1,4 +1,3 @@
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -8,8 +7,6 @@
   color: white;
   font-family: Arial, sans-serif;
 }
-
-
 .logo {
   font-size: 32px;
   font-weight: bold;
@@ -17,7 +14,6 @@
 .logo span {
   color: #ff4ecd;            
 }
-
 
 .nav ul {
   display: flex;
@@ -37,7 +33,6 @@
   color: #ff4ecd;           
 }
 
-
 .connect-btn {
   padding: 10px 22px;
   font-size: 15px;
@@ -48,7 +43,6 @@
   background: linear-gradient(90deg, #9b5de5, #ff9f1c);
   transition: 0.3s;
 }
-
 .connect-btn:hover {
   opacity: 0.8;
 }

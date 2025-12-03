@@ -1,41 +1,64 @@
 import React from "react";
 import "./About.css";
+import { IoEarth } from "react-icons/io5";
+
 
 export default function About() {
   return (
-    <section className="about-section">
+    <div className="about-container">
+
       
-      <h2 className="about-title">
-        About <span className="gradient-text">Me</span>
-      </h2>
+      <div className="about-left">
+        <h2 className="section-title"> About Me</h2>
 
-      <div className="about-container">
-        
-        <div className="about-left">
-          <img src="/profile.jpg" alt="Profile" className="about-img" />
-        </div>
-
-        <div className="about-right">
-          <h3 className="about-heading">Frontend Developer</h3>
-
-          <p className="about-description">
-            Hi! I'm <span className="highlight">Neha</span>, a passionate
-            frontend developer specializing in creating modern, responsive,
-            and interactive web experiences. I enjoy transforming ideas
-            into functional and visually appealing digital products.
+        <div className="about-card">
+          <p>
+            Hi there! I'm <strong>Neha</strong> , a passionate frontend developer
+            who believes in the transformative power of technology.
           </p>
 
-          <p className="about-description">
-            I work with technologies like <strong>React.js</strong>,
-            <strong> JavaScript</strong>, <strong>HTML</strong>,
-            <strong> CSS</strong>, to build
-            fast and elegant interfaces. My goal is to design
-            user-friendly, accessible, and impactful applications.
+          <p>
+            What drives me is not just writing code, but solving real-world
+            problems through meaningful, creative, and efficient solutions.  
+            I love how a few lines of code can automate processes, connect people,
+            or create experiences that delight users.
           </p>
 
-          <button className="about-btn gradient-btn">Download Resume</button>
+          <p>
+            Beyond coding, I’m an eager learner who enjoys new challenges.  
+            Whether debugging at midnight or exploring new tools on weekends,
+            I see every obstacle as a chance to grow and improve.
+          
+          </p>
         </div>
       </div>
-    </section>
+
+   
+      <div className="about-right">
+        <h2 className="section-title"> What I'm Passionate About</h2>
+
+        <div className="passion-card">
+          
+          <h3> <IoEarth />Web Development</h3>
+          <p>Building responsive and modern web applications.</p>
+        </div>
+
+        <div className="passion-card">
+          <h3>JavaScript & React.js</h3>
+          <p>Building scalable, component-based applications.</p>
+        </div>
+
+        <div className="passion-card">
+          <h3>API Integration</h3>
+          <p>Connecting applications with powerful backend services.</p>
+        </div>
+
+        <div className="passion-card">
+          <h3> Learning New Technologies</h3>
+          <p>Always exploring new tech trends and improving my skills..</p>
+        </div>
+
+      </div>
+    </div>
   );
 }

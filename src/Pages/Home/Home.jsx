@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
 import "./Home.css";
+import Footer from "../../Components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ I build pixel-perfect interfaces and smooth user experiences using React and mod
           <button className="hero-btn outline-btn">My resume</button>
         </div>
       </section>
+      <div className="footer">
+    <Footer/></div>
     </div>
     
   );

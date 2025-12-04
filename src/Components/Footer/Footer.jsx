@@ -24,10 +24,7 @@ const Footer = () => {
           <a href="#">Terms of Services</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Connect with me</a>
-        </div>
-
-       
-        <div className="social-icons">
+          {/* <div className="social-icons"> */}
           <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="icon" />
           </a>
@@ -39,7 +36,11 @@ const Footer = () => {
           <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
             <FaTwitter className="icon" />
           </a>
+        {/* </div> */}
         </div>
+
+       
+        
 
       </div>
 

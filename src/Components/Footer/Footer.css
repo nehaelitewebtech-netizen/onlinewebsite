@@ -32,19 +32,20 @@
 .footer-links a {
   color: #ccc;
   text-decoration: none;
-  margin-left: 150px;
+  margin-left: 120px;
   font-size: 15px;
   transition: 0.3s ease;
 }
 
 .footer-links a:hover {
   color: #ff009d;
+ 
 }
 
 
 .social-icons {
   display: flex;
-  gap: 18px;
+  gap: 38px;
   margin-top: 20px;
   margin-right: 200px; 
 }
@@ -60,6 +61,7 @@
 .social-icons .icon:hover {
   color: #ff009d;
   transform: translateY(-4px);
+   
 }
 
 

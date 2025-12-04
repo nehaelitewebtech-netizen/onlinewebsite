@@ -4,7 +4,7 @@
   padding: 100px 60px;
   background: #000;
   min-height: 100vh;
-  color: white;
+ 
 }
 .about-left, 
 .about-right {
@@ -15,12 +15,12 @@
   font-weight: 700;
   margin-bottom: 20px;
   color: #fff;
-  border-left: 4px solid #a855f7;
+  border-left: 4px solid #ff4ecd; ;
   padding-left: 10px;
 }
 .about-card {
-  background: white;
-  color: #333;
+  background: #000;
+  color: white;
   padding: 25px;
   border-radius: 16px;
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
@@ -49,7 +49,7 @@
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 6px;
-  color: #a855f7;
+  color: #ff4ecd; ;
 }
 .passion-card p {
   color: #ddd;

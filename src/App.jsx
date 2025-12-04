@@ -4,6 +4,7 @@ import Homee from "./Pages/Home/Home";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import Footerpage from "./Pages/Footerpage/Footerpage";
 import AboutUs from "./Pages/AboutUs/AboutUs";
+import SkillPage from "./Pages/SkillPage/SkillPage";
 
 const router=createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router=createBrowserRouter([
   {
     path:"/About",
     element:<AboutUs/>
+  },
+
+  {
+    path:"/skills",
+    element:<SkillPage/>
   },
 
   

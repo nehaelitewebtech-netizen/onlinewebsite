@@ -6,7 +6,8 @@ export default function Header() {
   return (
     <div className="header">
       <div className="logo">
-        Neha<span></span>
+        <span className="gradient-text">Neha</span>
+       
       </div>
 
       <nav className="nav">

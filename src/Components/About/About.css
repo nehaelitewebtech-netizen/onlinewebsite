@@ -2,10 +2,10 @@
   display: flex;
   gap: 40px;
   padding: 100px 60px;
-  background: #000;   
+  background: #000;
   min-height: 100vh;
+  color: white;
 }
-
 .about-left, 
 .about-right {
   flex: 1;
@@ -14,44 +14,48 @@
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
-  background: linear-gradient(90deg, #ff4f8b, #ff9f43, #9d5bff);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff;
+  border-left: 4px solid #a855f7;
+  padding-left: 10px;
 }
 .about-card {
-  background: #ffffff;
+  background: white;
+  color: #333;
   padding: 25px;
   border-radius: 16px;
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
   font-size: 17px;
   line-height: 1.7;
-  color: #333;
 }
-
 .passion-card {
-  background: #ffffff;
+  background: #111;
   padding: 20px;
   border-radius: 16px;
   margin-bottom: 18px;
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 5px 25px rgba(255, 255, 255, 0.1);
   transition: 0.3s ease;
   cursor: pointer;
-  border-left: 6px solid transparent;
+  border: 1px solid #222;
 }
+
 .passion-card:hover {
   transform: translateY(-5px);
-  border-left: 6px solid #ff4f8b; 
+  box-shadow: 0px 8px 30px rgba(168, 85, 247, 0.3);
 }
 .passion-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 6px;
-  color: #1b1b1b;
+  color: #a855f7;
 }
 .passion-card p {
-  color: #555;
+  color: #ddd;
   font-size: 15px;
 }
+
 @media (max-width: 900px) {
   .about-container {
     flex-direction: column;

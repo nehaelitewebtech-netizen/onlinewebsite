@@ -6,7 +6,7 @@ export default function Contact() {
     <section className="contact-section">
 
       <h2 className="contact-title">
-        Get in <span className="gradient-text">touch</span>
+     <span className="gradient-text">Get In touch</span>
       </h2>
 
       <div className="contact-container">
@@ -14,7 +14,7 @@ export default function Contact() {
        
         <div className="contact-left">
           <h3 className="contact-heading">
-            Let's <span className="gradient-text">talk</span>
+             <span className="gradient-text">Let's talk</span>
           </h3>
 
           <p className="contact-description">
@@ -24,9 +24,10 @@ export default function Contact() {
           </p>
 
           <div className="contact-info">
-            <p> nehasharmma72@gmail.com</p>
-            <p> +91 8968448954</p>
-            <p> India</p>
+          <span className="gradient-text"><a href="mailto:neha.elitewebtech@gmail.com">neha.elitewebtech@gmail.com</a><div></div>  <a href="tel:+918968448954">+918968448954</a><div></div>India</span> 
+          
+            
+            
           </div>
         </div>
         

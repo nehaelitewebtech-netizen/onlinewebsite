@@ -9,7 +9,7 @@ export default function Home() {
        <Header />
       <section className="hero-section">
         <div className="hero-img-wrapper">
-          <img src="/profile.jpg" alt="Profile" className="hero-img" />
+          <img src="src/assets/neha.jpeg" alt="Profile" className="hero-img" />
         </div>
         <h1 className="hero-title">
           I'm <span className="gradient-text">Neha</span>, frontend developer.

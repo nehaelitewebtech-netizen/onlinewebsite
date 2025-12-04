@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../Components/Header/Header";
 import "./Home.css";
 import Footer from "../../Components/Footer/Footer";
+import Profile from "../../assets/Profile.jpeg"
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
        <Header />
       <section className="hero-section">
         <div className="hero-img-wrapper">
-          <img src="src/assets/neha.jpeg" alt="Profile" className="hero-img" />
+          <img src={Profile} alt="Profile" />
         </div>
         <h1 className="hero-title">
           I'm <span className="gradient-text">Neha</span>, frontend developer.

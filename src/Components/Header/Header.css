@@ -15,21 +15,22 @@
   color: #ff4ecd;            
 }
 
-.nav ul {
+.nav-Links  {
   display: flex;
   list-style: none;
   gap: 35px;
+  text-decoration-color: #ff4ecd;   
 }
 
-.nav ul li {
+/* .nav-Links .a {
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s;
-  color: #ccc;
-}
+  color: #ff4ecd;
+} */
 
-.nav ul li.active,
-.nav ul li:hover {
+.nav-Links.active,
+.nav-Links:hover {
   color: #ff4ecd;           
 }
 

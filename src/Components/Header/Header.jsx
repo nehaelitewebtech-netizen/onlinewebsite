@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import {Link} from "react-router-dom"
 
 
 export default function Header() {
@@ -10,17 +11,17 @@ export default function Header() {
        
       </div>
 
-      <nav className="nav">
-        <ul>
-          <li className="active">Home</li>
-          <li>About Me</li>
-          <li>Projects</li>
-           <li>Skills</li>
-          <li>Contact</li>
-        </ul>
+      <nav className="nav-Links">
+        
+          <Link to="/">Home</Link>
+          <Link to="/About">About</Link>
+           <Link to="/Projects">Projects</Link>
+            <Link to="/Skills">Skills</Link>
+             <Link to="/Certifications">Certification</Link>
+          
       </nav>
 
-      <button className="connect-btn">Connect With Me</button>
+      <button className="connect-btn"><Link to="/contact">Connect With Me</Link></button>
     </div>
   )
 };

@@ -5,6 +5,8 @@ import ContactUs from "./Pages/ContactUs/ContactUs";
 import Footerpage from "./Pages/Footerpage/Footerpage";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import SkillPage from "./Pages/SkillPage/SkillPage";
+import ProjectPage from "./Pages/ProjectPage/ProjectPage";
+import CertificationPage from "./Pages/CertificationPage/CertificationPage";
 
 const router=createBrowserRouter([
   {
@@ -38,6 +40,22 @@ const router=createBrowserRouter([
     element:<SkillPage/>
   },
 
+  {
+    path:"/Projects",
+    element:<ProjectPage/>
+  },
+
+  {
+    path:"/Projects",
+    element:<ProjectPage/>
+  },
+
+  {
+    path:"/certifications",
+    element:<CertificationPage/>
+  },
+
+  
   
   ])
   const App = () => {

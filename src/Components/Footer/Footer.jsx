@@ -21,10 +21,10 @@ const Footer = () => {
 
      
         <div className="footer-links">
-          <a href="#">Terms of Services</a>
-          <a href="#">Privacy Policy</a>
+          <a href="#">location</a>
+          <a href="https://www.location">Chandigarh</a>
           <a href="#">Connect with me</a>
-          {/* <div className="social-icons"> */}
+          
           <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="icon" />
           </a>

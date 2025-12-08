@@ -89,10 +89,7 @@ export default function About() {
         </div>
       </section>
 
-      <div className="footer">
-        <Footer />
-      </div>
-
+      
     </div>
   );
 }

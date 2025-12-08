@@ -68,9 +68,7 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      <div className="footer">
-              <Footer />
-            </div>
+     
     </div>
   );
 }

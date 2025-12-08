@@ -2,19 +2,21 @@
   width: 100%;
   background: #0d0d0d;
   color: white;
-  
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
+  box-sizing: border-box;
+  padding: 25px 60px;
 }
 
-
+/* Columns */
 .footer-column {
   flex: 1;
 }
 
-
+/* Left Section */
 .left {
   text-align: left;
 }
@@ -33,7 +35,7 @@
   color: #bfbfbf;
 }
 
-
+/* Center Section */
 .center {
   text-align: center;
 }
@@ -50,15 +52,14 @@
   color: #ff009d;
 }
 
-
+/* Right Section (ICONS) */
 .right {
-  text-align: right;
   display: flex;
-  justify-content: flex-end;
-  gap: 45px;
-  padding-right: 100px;
+  justify-content: space-around; 
+  text-align: right;
 }
 
+/* Icons */
 .footer-icon {
   font-size: 30px !important;
   cursor: pointer;
@@ -71,22 +72,22 @@
   transform: translateY(-4px);
 }
 
-
+/* Mobile */
 @media (max-width: 800px) {
   .footer {
     flex-direction: column;
     text-align: center;
-    gap: 25px;
+    gap: 30px;
+    padding: 35px 20px;
   }
 
-  .left,
-  .center,
-  .right {
+  .left, .center, .right {
     text-align: center;
     justify-content: center;
   }
 
   .right {
     justify-content: center;
+    gap: 30px;
   }
 }

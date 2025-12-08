@@ -82,9 +82,7 @@ export default function Skills() {
 
         </div>
       ))}
-      <div className="footer">
-        <Footer />
-      </div>
+    
     </section>
     
   );

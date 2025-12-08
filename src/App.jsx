@@ -9,10 +9,6 @@ import ProjectPage from "./Pages/ProjectPage/ProjectPage";
 import CertificationPage from "./Pages/CertificationPage/CertificationPage";
 
 const router=createBrowserRouter([
-  {
-    path:"/header",
-    element:<Header/>
-  },
 
   {
     path:"/",

@@ -10,7 +10,8 @@ import resume from "../../assets/neharesume.pdf";
 
 export default function Home() {
   return (
-    <div className="home-container">
+    <>
+       <div className="home-container">
       <Header />
 
       <section className="hero-section">
@@ -49,9 +50,12 @@ export default function Home() {
 
 
 
-      <div className="footer">
+      
+    </div>
+    <div className="footer">
         <Footer />
       </div>
-    </div>
+    </>
+  
   );
 }

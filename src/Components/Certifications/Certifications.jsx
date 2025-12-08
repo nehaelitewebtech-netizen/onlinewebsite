@@ -36,9 +36,7 @@ export default function Certification() {
           </div>
         ))}
       </div>
-      <div className="footer">
-        <Footer />
-      </div>
+      
     </div>
   );
 }

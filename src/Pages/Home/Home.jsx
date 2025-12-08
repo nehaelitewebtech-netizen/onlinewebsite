@@ -3,9 +3,9 @@ import Header from "../../Components/Header/Header";
 import "./Home.css";
 import Footer from "../../Components/Footer/Footer";
 import { Link } from "react-router-dom";
+
 import Profile from "../../assets/Profile.jpeg";
 import resume from "../../assets/neharesume.pdf";
-
 
 export default function Home() {
   return (
@@ -13,10 +13,10 @@ export default function Home() {
       <Header />
 
       <section className="hero-section">
+
+       
         <div className="hero-img-wrapper">
-         
-          <img src={Profile} alt="Profile" />
-            
+          <img src={Profile} alt="Profile" className="hero-img" />
         </div>
 
         <h1 className="hero-title">
@@ -30,12 +30,10 @@ export default function Home() {
         </p>
 
         <div className="hero-buttons">
-         
           <Link to="/contact" className="hero-btn gradient-btn">
             Connect With Me
           </Link>
 
-     
           <a
             href={resume}
             target="_blank"

@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div className="about-container">
 
-      {/* LEFT SECTION */}
+      
       <div className="about-left">
         <h2 className="section-title"> About Me</h2>
 
@@ -35,7 +35,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* RIGHT SECTION */}
+   
       <div className="about-right">
         <h2 className="section-title"> What I'm Passionate About</h2>
 

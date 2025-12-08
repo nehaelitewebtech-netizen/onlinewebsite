@@ -11,6 +11,11 @@ import {
   SiMysql,
   SiMongodb,
   SiC,
+  SiGithub,
+ 
+
+  
+  SiPostman,
 } from "react-icons/si";
 
 export default function Skills() {
@@ -29,18 +34,26 @@ export default function Skills() {
       title: "Frameworks & Libraries",
       skills: [
         { icon: <SiReact />, name: "React" },
-        
         { icon: <SiBootstrap />, name: "Bootstrap" },
-       
       ],
     },
-    
+
     {
       title: "Databases",
       skills: [
         { icon: <SiMysql />, name: "MySQL" },
         { icon: <SiMongodb />, name: "MongoDB" },
+      ],
+    },
+
+    {
+      title: "Tools",
+      skills: [
+        { icon: <SiGithub />, name: "GitHub" },
        
+       
+        { icon: <SiPostman />, name: "Postman" },
+    
       ],
     },
   ];

@@ -5,6 +5,7 @@ import { IoEarth } from "react-icons/io5";
 import { SiJavascript, SiReact } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { GiSkills } from "react-icons/gi";
+import Footer from "../../Components/Footer/Footer";
 
 export default function About() {
 
@@ -87,6 +88,10 @@ export default function About() {
           ))}
         </div>
       </section>
+
+      <div className="footer">
+        <Footer />
+      </div>
 
     </div>
   );

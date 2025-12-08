@@ -1,5 +1,6 @@
 import React from "react";
 import "./Skills.css";
+import Footer from "../../Components/Footer/Footer";
 
 import {
   SiHtml5,
@@ -17,6 +18,8 @@ import {
   
   SiPostman,
 } from "react-icons/si";
+
+
 
 export default function Skills() {
   const skillCategories = [
@@ -74,8 +77,15 @@ export default function Skills() {
               </div>
             ))}
           </div>
+
+
+
         </div>
       ))}
+      <div className="footer">
+        <Footer />
+      </div>
     </section>
+    
   );
 }

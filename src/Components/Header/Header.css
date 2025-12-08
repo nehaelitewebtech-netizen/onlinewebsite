@@ -22,12 +22,7 @@
   text-decoration-color: #ff4ecd;   
 }
 
-/* .nav-Links .a {
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.3s;
-  color: #ff4ecd;
-} */
+
 
 .nav-Links.active,
 .nav-Links:hover {

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Certifications.css";
+import Footer from "../../Components/Footer/Footer";
 
 export default function Certification() {
   const certificates = [
@@ -34,6 +35,9 @@ export default function Certification() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );

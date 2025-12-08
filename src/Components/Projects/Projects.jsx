@@ -1,33 +1,34 @@
 import React from "react";
 import "./Projects.css";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import Footer from "../../Components/Footer/Footer";
 
 export default function Projects() {
   const projects = [
     {
       title: "Portfolio Website",
       description:
-        "A personal portfolio built using React.js showcasing skills, projects, and contact.",
-      tech: ["React", "CSS"],
-      live: "https://your-portfolio-link.com",
+        "A modern personal portfolio built using React.js with animations, responsive UI, and smooth transitions.",
+      tech: ["Reactjs", "CSS",],
+      image: "https://i.postimg.cc/Bbg3cpnP/portfolio.jpg",
       github: "#",
     },
 
     {
       title: "Retro Revive",
       description:
-        "E-commerce website specializing in retro clothes and accessories for women.",
+        "A retro fashion e-commerce platform featuring product listings, filters, and cart functionality.",
       tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      live: "#",
+      image: "https://i.postimg.cc/t4DFQQtQ/ecommerce.jpg",
       github: "#",
     },
 
     {
       title: "Job Portal",
       description:
-        "A job portal providing job listings for employees and candidates.",
+        "A job portal offering recruitment, job listings, and user authentication features.",
       tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      live: "#",
+      image: "https://i.postimg.cc/0j6w0W5q/jobportal.jpg",
       github: "#",
     },
   ];
@@ -39,27 +40,37 @@ export default function Projects() {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-
-            <div className="tech-stack">
-              {project.tech.map((item, i) => (
-                <span key={i}>{item}</span>
-              ))}
+            
+         
+            <div className="project-img">
+              <img src={project.image} alt={project.title} />
             </div>
 
-            <div className="project-links">
-              <a href={project.live} target="_blank" rel="noopener noreferrer">
-                Live Demo <FaExternalLinkAlt className="icon" />
-              </a>
+     
+            <div className="project-content">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
 
-              <a href={project.github} target="_blank" rel="noopener noreferrer">
-                GitHub <FaGithub className="icon" />
-              </a>
+              <div className="tech-stack">
+                {project.tech.map((item, i) => (
+                  <span key={i}>{item}</span>
+                ))}
+              </div>
+
+            
+              <div className="project-links">
+                <a href={project.github} className="btn btn-github">
+                  GitHub <FaGithub />
+                </a>
+              </div>
+
             </div>
           </div>
         ))}
       </div>
+      <div className="footer">
+              <Footer />
+            </div>
     </div>
   );
 }

@@ -7,36 +7,50 @@ import { TbApi } from "react-icons/tb";
 import { GiSkills } from "react-icons/gi";
 
 export default function About() {
+
+  const education = [
+    {
+      title: "Master of Computer Applications (MCA)",
+      description:
+        "Completed from AMITY UNIVERSITY. Studied Web Development, DBMS, OS, and Software Engineering.",
+      year: "2023 - 2025",
+    },
+    {
+      title: "Bachelor of Science in Information Technology (BSC-IT)",
+      description:
+        "Completed from PUNJAB UNIVERSITY. Studied Programming, C, C++, and Fundamentals of Computers.",
+      year: "2020 - 2023",
+    },
+    {
+      title: "PGDCA (Post Graduate Diploma in Computer Application)",
+      description: "Completed from Punjab UNIVERSITY.",
+      year: "2019 - 2020",
+    },
+  ];
+
   return (
     <div className="about-container">
 
-      
-      <div className="about-left">
+     
+      <section className="about-me">
         <h2 className="section-title"> About Me</h2>
-
         <div className="about-card">
           <p>
             Hi there! I'm <strong>Neha</strong>, a passionate frontend developer
             who believes in the transformative power of technology.
           </p>
-
           <p>
             What drives me is not just writing code, but solving real-world
             problems through meaningful, creative, and efficient solutions.
-            I love how a few lines of code can automate processes, connect people,
-            or create experiences that delight users.
           </p>
-
           <p>
-            Beyond coding, I’m an eager learner who enjoys new challenges.  
-            Whether debugging at midnight or exploring new tools on weekends,
-            I see every obstacle as a chance to grow and improve.
+            Beyond coding, I’m an eager learner who enjoys new challenges.
           </p>
         </div>
-      </div>
+      </section>
 
-   
-      <div className="about-right">
+     
+      <section className="passions">
         <h2 className="section-title"> What I'm Passionate About</h2>
 
         <div className="passion-card">
@@ -45,9 +59,7 @@ export default function About() {
         </div>
 
         <div className="passion-card">
-          <h3>
-            <SiJavascript /> <SiReact /> JavaScript & React.js
-          </h3>
+          <h3><SiJavascript /> <SiReact /> JavaScript & React.js</h3>
           <p>Building scalable, component-based applications.</p>
         </div>
 
@@ -60,8 +72,22 @@ export default function About() {
           <h3><GiSkills /> Learning New Technologies</h3>
           <p>Always exploring new tech trends and improving my skills.</p>
         </div>
+      </section>
 
-      </div>
+     
+      <section className="education">
+        <h2 className="section-title"> Education</h2>
+        <div className="education-grid">
+          {education.map((edu, index) => (
+            <div key={index} className="education-card">
+              <h3>{edu.title}</h3>
+              <span className="edu-year">{edu.year}</span>
+              <p>{edu.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
     </div>
   );
 }

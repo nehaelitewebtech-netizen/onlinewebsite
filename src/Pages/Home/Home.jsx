@@ -4,6 +4,7 @@ import "./Home.css";
 import Footer from "../../Components/Footer/Footer";
 import { Link } from "react-router-dom";
 import Profile from "../../assets/Profile.jpeg";
+import resume from "../../assets/resume.pdf";
 
 
 export default function Home() {
@@ -36,7 +37,7 @@ export default function Home() {
 
      
           <a
-            href="/src/assets/resume.pdf"
+            href={resume}
             target="_blank"
             rel="noopener noreferrer"
             className="hero-btn outline-btn"

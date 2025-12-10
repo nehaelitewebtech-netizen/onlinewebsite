@@ -5,7 +5,7 @@ import { IoEarth } from "react-icons/io5";
 import { SiJavascript, SiReact } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { GiSkills } from "react-icons/gi";
-import Footer from "../../Components/Footer/Footer";
+
 
 export default function About() {
 
@@ -27,6 +27,11 @@ export default function About() {
       description: "Completed from Punjab UNIVERSITY.",
       year: "2019 - 2020",
     },
+   
+     
+    
+  
+
   ];
 
   return (
@@ -73,6 +78,7 @@ export default function About() {
           <h3><GiSkills /> Learning New Technologies</h3>
           <p>Always exploring new tech trends and improving my skills.</p>
         </div>
+
       </section>
 
      

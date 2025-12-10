@@ -1,13 +1,14 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import "./Contact.css";
-import Footer from "../../Components/Footer/Footer";
+
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: ""
   });
-
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,14 +22,29 @@ export default function Contact() {
       return;
     }
 
-    alert("Your message has been submitted successfully!");
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+    };
 
-   
-    setFormData({
-      name: "",
-      email: "",
-      message: ""
-    });
+    emailjs
+      .send(
+        "service_th3exq9",     
+        "template_22aihvy",     
+        templateParams,
+        "n6IqouDo8yW2qfFLl"       
+      )
+      .then(
+        (response) => {
+          alert("Your message has been sent to your email!");
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          console.error("Email send failed:", error);
+          alert("Failed to send message. Try again later.");
+        }
+      );
   };
 
   return (
@@ -38,7 +54,6 @@ export default function Contact() {
       </h2>
 
       <div className="contact-container">
-   
         <div className="contact-left">
           <h3 className="contact-heading">
             <span className="gradient-text">Let's talk</span>
@@ -62,7 +77,6 @@ export default function Contact() {
           </div>
         </div>
 
-       
         <div className="contact-right">
           <form className="contact-form" onSubmit={handleSubmit}>
             <label>Your Name</label>
@@ -97,8 +111,6 @@ export default function Contact() {
           </form>
         </div>
       </div>
-      
     </section>
-    
   );
 }

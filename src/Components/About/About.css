@@ -1,121 +1,160 @@
-
 .about-container {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 40px 20px;
-  width: 100%;           
-  margin: 0;            
+  padding: 60px 80px;
+  background: #000;
   color: #fff;
-  background-color: #000; 
-  min-height: 100vh;
-  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 
 .section-title {
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 700;
-  margin-bottom: 15px;
-  color: #ff9f1c;
-  text-align: center;
+  margin-bottom: 20px;
+  color: #ff4ecd;
+  letter-spacing: 1px;
+  position: relative;
+  animation: slideLeft 0.8s ease-in-out;
+}
+
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.section-title::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff4ecd, #9b5de5);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 5px;
 }
 
 
 .about-card {
-  background: #111; 
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid #333;
-  line-height: 1.6;
-  color: #dddddd;
-  font-size: 16px;
-  transition: 0.3s ease;
-  max-width: 900px;
-  margin: 0 auto;  
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 15px;
+  line-height: 1.7;
+  font-size: 18px;
+  border: 1px solid rgba(255, 78, 205, 0.25);
+  box-shadow: 0 0 20px rgba(255, 78, 205, 0.2);
+  animation: fadeUp 1s ease-in-out;
+  transition: 0.3s;
 }
 
 .about-card:hover {
-  border-color: #9b5de5;
-  transform: translateY(-3px);
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 25px rgba(255, 78, 205, 0.35);
 }
 
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.passions {
+  margin: 50px 0;
+}
 
 .passion-card {
-  background: #111;
-  padding: 18px;
-  border-radius: 12px;
-  border: 1px solid #333;
-  margin: 0 auto 15px;  
-  max-width: 900px;
-  transition: 0.3s ease;
-}
-
-.passions .passion-card:hover {
-  border-color: #ff4ecd;
-  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  transition: 0.4s ease;
+  border: 1px solid rgba(255, 78, 205, 0.15);
+  animation: fadeUp 1s ease-in-out;
 }
 
 .passion-card h3 {
-  font-size: 18px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: #ff4ecd;
-  margin-bottom: 6px;
+  gap: 12px;
+  font-size: 22px;
+  color: #ff9f1c;
+  text-shadow: 0 0 8px rgba(255, 78, 205, 0.8);
+  transition: 0.3s ease;
+}
+
+.passion-card:hover {
+  transform: scale(1.03) translateY(-5px);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 30px rgba(155, 93, 229, 0.5);
 }
 
 .passion-card p {
-  color: #bbbbbb;
-  font-size: 14px;
+  margin-top: 8px;
+  color: #ddd;
 }
 
 
 .education-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-  margin-top: 10px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;  
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+  animation: fadeUp 1s ease-in-out;
 }
 
 .education-card {
-  background: #111;
-  padding: 18px;
-  border-radius: 12px;
-  border: 1px solid #333;
-  transition: 0.3s ease;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 78, 205, 0.2);
+  box-shadow: 0 0 15px rgba(255, 78, 205, 0.15);
+  transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
 }
+
 
 .education-card:hover {
-  transform: translateY(-4px);
-  border-color: #ff9f1c;
-}
-
-.education-card h3 {
-  font-size: 18px;
-  margin-bottom: 6px;
-  color: #ff9f1c;
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 0 25px rgba(255, 78, 205, 0.4);
 }
 
 .edu-year {
-  display: block;
+  display: inline-block;
+  background: linear-gradient(90deg, #ff4ecd, #ff9f1c);
+  padding: 6px 12px;
+  border-radius: 12px;
+  color: #000;
   font-size: 14px;
-  color: #bbbbbb;
-  margin-bottom: 8px;
+  margin: 8px 0;
+  font-weight: bold;
+  animation: popIn 0.7s ease;
 }
 
-.education-card p {
-  color: #cccccc;
-  font-size: 14px;
-  line-height: 1.4;
+
+@keyframes popIn {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
 
-@media (min-width: 768px) {
-  .education-grid {
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 768px) {
+  .about-container {
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .about-card {
+    font-size: 16px;
   }
 }

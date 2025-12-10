@@ -1,6 +1,7 @@
 import React from "react";
 import "./Certifications.css";
-import Footer from "../../Components/Footer/Footer";
+
+import uptalent from "../../assets/uptalent.jpeg";
 
 export default function Certification() {
   const certificates = [
@@ -8,7 +9,8 @@ export default function Certification() {
       title: "Web Development",
       provider: "Uptalent Platform Pvt. Ltd",
       year: "August 2024",
-      preview: "#", // link to certificate or file
+      
+      preview: uptalent, 
     },
   ];
 

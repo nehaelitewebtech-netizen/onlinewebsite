@@ -8,18 +8,44 @@ import Profile from "../../assets/Profile.jpeg";
 import resume from "../../assets/neharesume.pdf";
 
 import About from "../../Components/About/About"; 
+import Projects from "../../Components/Projects/Projects"
+import Skills from "../../Components/Skills/Skills"
+import Certifications from "../../Components/Certifications/Certifications"
+import Contact from "../../Components/Contact/Contact"
+
+
 
 export default function Home() {
-  const aboutRef = useRef(null);  
+  const aboutRef = useRef(null); 
+  const projectsRef = useRef(null);
+  const SkillRef = useRef(null);
+   const CertificationsRef = useRef(null);
+ const contactRef = useRef(null);
 
-  const scrollToAbout = () => {
+  const scrollToabout  = () => {
     aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToproject  = () => {
+    projectsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+   const scrollToSkills  = () => {
+    SkillRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToCertifications  = () => {
+    CertificationsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToContact  = () => {
+    contactRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <>
       <div className="home-container">
-        <Header onAboutClick={scrollToAbout} />  
+        <Header onaboutClick ={scrollToabout}
+        onprojectClick={scrollToproject}  onSkillClick={scrollToSkills} onCertificationsClick={scrollToCertifications} onContactClick={scrollToContact} />  
+        
 
     
         <section className="hero-section">
@@ -57,6 +83,29 @@ export default function Home() {
         <section ref={aboutRef}>
           <About />
         </section>
+
+
+        <section ref={projectsRef}>
+  <Projects />
+</section>
+
+<section ref={SkillRef}>
+  <Skills />
+</section>
+
+
+<section ref={CertificationsRef}>
+  <Certifications />
+</section>
+
+
+<section ref={contactRef}>
+  <Contact />
+</section>
+
+
+
+
       </div>
 
       <div className="footer">

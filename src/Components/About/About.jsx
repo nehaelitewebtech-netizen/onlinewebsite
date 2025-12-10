@@ -6,7 +6,6 @@ import { SiJavascript, SiReact } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { GiSkills } from "react-icons/gi";
 
-
 export default function About() {
 
   const education = [
@@ -19,19 +18,32 @@ export default function About() {
     {
       title: "Bachelor of Science in Information Technology (BSC-IT)",
       description:
-        "Completed from PUNJAB UNIVERSITY. Studied Programming, C, C++, and Fundamentals of Computers.",
+        "Completed from PANJAB UNIVERSITY. Studied Programming, C, C++, and Fundamentals of Computers.",
       year: "2020 - 2023",
     },
     {
       title: "PGDCA (Post Graduate Diploma in Computer Application)",
-      description: "Completed from Punjab UNIVERSITY.",
+      description: "Completed from PANJAB UNIVERSITY.",
       year: "2019 - 2020",
     },
-   
-     
-    
-  
+  ];
 
+  const experience = [
+    {
+      title: "Frontend Developer Intern",
+      company: "Elite Web Technology",
+      description:
+        "Currently working on React.js projects, building responsive interfaces and integrating APIs.",
+      year: "2025 - Present",
+    },
+    {
+      title: "Frontend Developer Intern",
+      company: "Uptalent Platform for Global Services",
+      description:
+        "working on HTML, CSS, Javascript, Bootstrap projects, building responsive interfaces.",
+      year: "2024",
+    },
+   
   ];
 
   return (
@@ -55,7 +67,22 @@ export default function About() {
         </div>
       </section>
 
-     
+      
+      <section className="experience">
+        <h2 className="section-title"> Experience</h2>
+        <div className="experience-grid">
+          {experience.map((exp, index) => (
+            <div key={index} className="experience-card">
+              <h3>{exp.title}</h3>
+              <span className="exp-company">{exp.company}</span>
+              <span className="exp-year">{exp.year}</span>
+              <p>{exp.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+   
       <section className="passions">
         <h2 className="section-title"> What I'm Passionate About</h2>
 
@@ -78,7 +105,6 @@ export default function About() {
           <h3><GiSkills /> Learning New Technologies</h3>
           <p>Always exploring new tech trends and improving my skills.</p>
         </div>
-
       </section>
 
      
@@ -94,7 +120,6 @@ export default function About() {
           ))}
         </div>
       </section>
-
       
     </div>
   );

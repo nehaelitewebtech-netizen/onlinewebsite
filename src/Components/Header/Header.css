@@ -20,6 +20,7 @@
 
 
 .nav-Links {
+  cursor: pointer;
   display: flex;
   list-style: none;
   gap: 35px;
@@ -93,3 +94,4 @@
     font-size: 16px;
   }
 }
+

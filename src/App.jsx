@@ -42,11 +42,6 @@ const router=createBrowserRouter([
   },
 
   {
-    path:"/Projects",
-    element:<ProjectPage/>
-  },
-
-  {
     path:"/certifications",
     element:<CertificationPage/>
   },

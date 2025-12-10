@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
-export default function Header({ onAboutClick }) {
+export default function Header({ onaboutClick , onprojectClick, onSkillClick, onCertificationsClick , onContactClick}) {
   return (
     <div className="header">
       <div className="logo">
@@ -13,17 +13,31 @@ export default function Header({ onAboutClick }) {
         <Link to="/">Home</Link>
 
      
-        <span className="nav-link" onClick={onAboutClick}>
+        <span className="nav-link" onClick={onaboutClick}>
           About
         </span>
 
-        <Link to="/Projects">Projects</Link>
-        <Link to="/Skills">Skills</Link>
-        <Link to="/Certifications">Certification</Link>
+        <span className="nav-link" onClick={onprojectClick}>
+          Projects
+        </span>
+
+        <span className="nav-link" onClick={onSkillClick}>
+          Skills
+        </span>
+
+         <span className="nav-link" onClick={onCertificationsClick}>
+          Certifications
+        </span>
+
+       
+        
+       
       </nav>
 
       <button className="connect-btn">
-        <Link to="/contact">Connect With Me</Link>
+       <span className="nav-link" onClick={onContactClick}>
+          Connect With Me
+        </span>
       </button>
     </div>
   );

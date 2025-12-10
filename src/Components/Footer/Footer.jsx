@@ -18,13 +18,13 @@ const Footer = () => {
       </div>
 
       <div className="footer-column right">
-        <a href="https://linkedin.com" target="_blank">
+        <a href="https://www.linkedin.com/in/neha-sharma-461369292/" target="_blank">
           <FaLinkedin className="footer-icon" />
         </a>
         <a href="https://github.com/nehaelitewebtech-netizen" target="_blank">
           <FaGithub className="footer-icon" />
         </a>
-        <a href="https://twitter.com" target="_blank">
+        <a href="https://x.com/NehaSharma0909" target="_blank">
           <FaTwitter className="footer-icon" />
         </a>
       </div>

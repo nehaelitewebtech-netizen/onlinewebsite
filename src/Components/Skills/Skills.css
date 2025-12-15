@@ -1,5 +1,5 @@
 .skills-section {
-  padding: 60px 20px;
+  padding: 0px 80px 20px 80px;
   background: #000;
   text-align: center;
 }
@@ -7,8 +7,8 @@
 .skills-title {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 30px;
-  color: white;
+  color: #ff9f1c;;
+  margin: 0;
 }
 
 .skills-grid {

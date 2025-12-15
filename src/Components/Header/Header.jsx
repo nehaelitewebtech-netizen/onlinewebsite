@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 export default function Header({ onaboutClick , onprojectClick, onSkillClick, onCertificationsClick , onContactClick}) {
   return (
     <div className="header">
-      <div className="logo">
+      <div className="new-div-header">
+<div className="logo">
         <span className="gradient-text">Neha</span>
       </div>
 
@@ -39,6 +40,8 @@ export default function Header({ onaboutClick , onprojectClick, onSkillClick, on
           Connect With Me
         </span>
       </button>
+      </div>
+      
     </div>
   );
 }

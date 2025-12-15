@@ -1,7 +1,7 @@
 .contact-section {
   background: #000;
   color: #fff;
-  padding: 80px 10%;
+   padding: 0px 80px 20px 80px;
   min-height: 100vh;
 }
 
@@ -9,8 +9,8 @@
   text-align: center;
   font-size: 58px;
   font-weight: bold;
-  margin-bottom: 70px;
-}
+  margin: 0;
+padding-bottom: 20px;}
 
 .gradient-text {
   background: linear-gradient(to right, #a855f7, #f97316);

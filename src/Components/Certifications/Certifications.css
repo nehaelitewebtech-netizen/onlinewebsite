@@ -1,9 +1,8 @@
 .certification-container {
   width: 100%;
-  min-height: 100vh;
   background-color: #000; 
   color: #fff;
-  padding: 60px 20px;
+   padding: 0px 80px 20px 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,8 +13,9 @@
   font-size: 32px;
   font-weight: 700;
   color: #ff9f1c;
-  margin-bottom: 40px;
+  margin: 0;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .cert-heading::after {

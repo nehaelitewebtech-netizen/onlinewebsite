@@ -2,13 +2,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 60px;
   background: #000;
   color: #ff4ecd;
   font-family: Arial, sans-serif;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  
 }
 
+.new-div-header{
+      display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  padding: 25px 60px;
 
+}
 .logo {
   font-size: 32px;
   font-weight: bold;

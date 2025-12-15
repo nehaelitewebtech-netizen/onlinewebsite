@@ -1,91 +1,103 @@
 .footer {
-  width: 100%;
-  background: #0d0d0d;
-  color: white;
+  background: #000;
+  color: #ddd;
+  padding: 0px 80px 20px 80px;
+  font-family: "Poppins", sans-serif;
+}
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- 
-  box-sizing: border-box;
-  padding: 25px 60px;
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-column h3 {
+  color: #ff4ecd;
+  font-size: 18px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.footer-column h3::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff4ecd, #9b5de5);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-radius: 5px;
 }
 
 
-.footer-column {
-  flex: 1;
+.footer-column ul {
+  list-style: none;
+  padding: 0;
 }
 
-
-.left {
-  text-align: left;
-}
-
-.logo {
-  font-size: 34px;
-  font-weight: 600;
-}
-
-
-
-.copy {
-  margin-top: 10px;
-  color: #bfbfbf;
-}
-
-
-.center {
-  text-align: center;
-}
-
-.location-title {
-  font-size: 15px;
-  color: #aaa;
-}
-
-.location-value {
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 5px;
-  color: #ff009d;
-}
-
-
-.right {
-  display: flex;
-  justify-content: space-around; 
-  text-align: right;
-}
-
-
-.footer-icon {
-  font-size: 30px !important;
+.footer-column ul li {
+  margin-bottom: 10px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-column ul li:hover {
+  color: #ff4ecd;
+}
+
+
+.footer-column p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: #ccc;
-  transition: 0.3s ease;
-}
-
-.footer-icon:hover {
-  color: #ff009d;
-  transform: translateY(-4px);
 }
 
 
-@media (max-width: 800px) {
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ff4ecd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #ff4ecd;
+  transform: translateX(5px);
+}
+
+.social-links svg {
+  font-size: 18px;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  color: #888;
+}
+
+
+@media (max-width: 768px) {
   .footer {
-    flex-direction: column;
     text-align: center;
-    gap: 30px;
-    padding: 35px 20px;
   }
 
-  .left, .center, .right {
-    text-align: center;
+  .footer-column p,
+  .social-links a {
     justify-content: center;
-  }
-
-  .right {
-    justify-content: center;
-    gap: 30px;
   }
 }

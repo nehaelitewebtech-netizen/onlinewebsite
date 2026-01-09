@@ -46,7 +46,7 @@ export default function About() {
 
   return (
     <div className="about-container">
-      {/* ABOUT ME */}
+    
       <section className="about-me">
         <h2 className="section-title">About Me</h2>
         <div className="about-card">
@@ -69,7 +69,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* EXPERIENCE */}
       <section className="experience">
         <h2 className="section-title">Experience</h2>
         <div className="experience-grid">
@@ -84,7 +83,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* PASSIONS */}
+  
       <section className="passions">
         <h2 className="section-title">What I'm Passionate About</h2>
 
@@ -134,7 +133,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* EDUCATION */}
+    
       <section className="education">
         <h2 className="section-title">Education</h2>
         <div className="education-grid">

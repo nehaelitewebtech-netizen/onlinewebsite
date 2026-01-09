@@ -4,7 +4,7 @@ import "./Home.css";
 import Footer from "../../Components/Footer/Footer";
 import { Link } from "react-router-dom";
 
-import Profile from "../../assets/Profile.jpeg";
+import Profile from "../../assets/new.jpeg";
 import resume from "../../assets/neharesume.pdf";
 
 import About from "../../Components/About/About"; 

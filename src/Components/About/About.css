@@ -45,7 +45,8 @@
   padding: 35px;
   border-radius: 15px;
   line-height: 1.7;
-  font-size: 18px;
+  font-size: 16px;
+  color: #ccc;
   border: 1px solid rgba(255, 78, 205, 0.25);
   box-shadow: 0 0 20px rgba(255, 78, 205, 0.2);
   animation: fadeUp 1s ease-in-out;
@@ -117,6 +118,7 @@
   transition: 0.35s ease;
   position: relative;
   overflow: hidden;
+  color: #ccc;
 }
 
 
@@ -137,9 +139,6 @@
   font-weight: bold;
   animation: popIn 0.7s ease;
 }
-
-
-
 
 
 .experience {
@@ -163,6 +162,7 @@
   transition: 0.35s ease;
   position: relative;
   overflow: hidden;
+  color: #ccc;
 }
 
 .experience-card:hover {

@@ -1,18 +1,17 @@
 import React from "react";
 import "./Footer.css";
 import { FaGithub, FaLinkedin, FaMapMarkerAlt } from "react-icons/fa";
-
-export default function Footer() {
+export default function Footer({ onaboutClick , onprojectsClick,}) {
+ 
   return (
     <footer className="footer">
       <div className="footer-container">
 
-       
         <div className="footer-column">
           <h3>Quick Links</h3>
           <ul>
-            <li>About Me</li>
-            <li>Projects</li>
+            <li onClick={onaboutClick}>About Me</li>
+            <li onClick={onprojectsClick}>Projects </li>
           </ul>
         </div>
 
@@ -44,4 +43,5 @@ export default function Footer() {
       
     </footer>
   );
+  
 }
